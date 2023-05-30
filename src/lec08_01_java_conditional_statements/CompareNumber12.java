@@ -5,8 +5,9 @@ import java.util.Scanner;
 // We will solve this issue in the next class
 public class CompareNumber12 {
 	// Why static? Non static method or variable can't be called inside main method
-	static int val1;
-	static int val2;
+	static Scanner scanner = new Scanner(System.in);
+	static int val1 = scanner.nextInt();
+	static int val2 = scanner.nextInt();
 		
 	// If val1 < val2, multiply val1 with val2
 	public static void multiplication () { 
@@ -39,11 +40,7 @@ public class CompareNumber12 {
 	// if condition should be inside method, it can' be free, like you can not write condition in line 62
 
 	public static void main(String[] args) {
-		System.out.println("---: Please put your numbers below :---");
-		Scanner scanner = new Scanner(System.in);
-		int val1 = scanner.nextInt();
-		int val2 = scanner.nextInt();
-			
+		System.out.println("---: After putting the numbers above :---");
 		solution();		
 		scanner.close();
 	}

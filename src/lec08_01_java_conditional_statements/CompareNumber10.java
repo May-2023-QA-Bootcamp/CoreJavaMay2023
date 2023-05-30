@@ -5,19 +5,19 @@ public class CompareNumber10 {
 	static int val1 = 27;
 	static int val2 = 67;
 	
-	// If val1 < val2, multiply val1 with val2
+	// Condition by team: If val1 < val2, multiply val1 with val2
 	public static void multiplication () { 
 		int mult = val1*val2;
 		System.out.println("Multiplication is: " + mult);
 	}
 	
-	// If val1>val2, divide val1 by val2
+	// Condition by team: If val1>val2, divide val1 by val2
 	public static void division () {
 		int div = val1/val2;
 		System.out.println("Division is: " + div);
 	}
 	
-	// If val1 == val2, do an addition of val1 and val2
+	// Condition by team: If val1 == val2, do an addition of val1 and val2
 	public static void addition () {
 		int add = val1 + val2;
 		System.out.println("Addition is: " + add);
