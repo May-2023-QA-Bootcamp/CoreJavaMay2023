@@ -2,7 +2,7 @@ package lec09_01_java_conditional_statements;
 
 import java.util.Scanner;
 
-public class RecapLastClass {
+public class RecapLastClass1 {
 
 	public static void main(String[] args) {
 		System.out.println("----- Put your number below -----");
