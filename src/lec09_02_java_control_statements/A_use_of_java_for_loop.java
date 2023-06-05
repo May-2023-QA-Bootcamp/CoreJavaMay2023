@@ -35,13 +35,94 @@ programming languages to introduce a for-loop.
 
 public class A_use_of_java_for_loop {
 	public static void main(String[] args) {
+		
+		// incremental block is used here
+		System.out.println("\n-------------- for loop 01 --------------\n");
 		for(int i = 0; i <= 5; i++) {
 			System.out.println(i);
 		}
+		
+		System.out.println("\n-------------- for loop 02 --------------\n");
+		for (int i = 1; i<=10; i = i+2) {
+			System.out.println(i);
+		}
+		// 1, 3, 5, 7, 9
+	
+		System.out.println("\n-------------- for loop 03 --------------\n");
+		for (int i = -5; i <=10; i += 3) {
+			System.out.println(i);
+		}
+		// -5, -2, 1, 4, 7, 10
+		
+		System.out.println("\n---------- for loop 04  ----------\n");
+		for (double i = 5.3; i < 11; i = i + 2.5) {
+			System.out.println(i);
+		}
+		
+		System.out.println("\n---------- for loop 05  ----------\n");
+		int j = 2;
+		for (int i = 1; i < 10; i = i + 3) { 
+			System.out.println("The values are: " + i * j);
+		}
+		// 1, 4, 7
+		// 2, 8, 14
+		
+		System.out.println("\n---------- for loop 06, condition false  ----------\n");
+		for (int i =1; i >10; i++) {
+			System.out.println(i);
+		}
+		// if the condition is false, loop terminated, value of i will not move to the for loop body
+		
+		// decremental block is used here
+		System.out.println("\n---------- for loop 07, decremental  ----------\n");
+		for (int i = 5; i >0; i--) {
+			System.out.println(i);
+		}
+		
+		System.out.println("\n---------- for loop 08, condition is false  ----------\n");
+		// as condition is false, nothing will execute/print
+		for (int i = 5; i < 0; i--) {
+			System.out.println(i);
+		}
+		
+		// very common mistake by new comer
+		// this is infinite loop, so comment out not to run, common mistake when you select conditional block
+		System.out.println("\n---------- for loop 09, inifinite loop  ----------\n");
+		/*
+		for (int i = 10; i >0; i++) {
+			System.out.println(i);
+		}
+		*/
+		
+		System.out.println("\n---------- for loop 10  ----------\n");
+		for (int i = 10; i >= 0; i--) {
+			System.out.println(i);
+		}
+		
+		System.out.println("\n---------- for loop 11  ----------\n");
+		int l = 2;
+		for (int i = 18; i > 10; i = i - 3) {
+			System.out.println(i + l);
+		}
+		// 18, 15, 12
+		// 20, 17, 14
+
+		System.out.println("\n---------- for loop 12  ----------\n");
+		int m = 2;
+		for (int i = 25; i > 10; i -= 3) { 
+			System.out.println(i/m);
+		}
+		// 25, 22, 19, 16, 13
+		// 12, 11, 9, 8, 6
+		// why not 12.5? because int type is complete number, no decimal
+		
+		System.out.println("\n---------- for loop 13, condition is false  ----------\n");
+		// as condition is false, nothing will execute/print
+		int n = 2;
+		for (int i = 25; i < 10; i -= 3) {
+			System.out.println(i + n);
+		}
+		
 	}
-	
-	
-	
-	
 
 }

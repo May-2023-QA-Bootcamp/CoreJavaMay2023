@@ -1,5 +1,6 @@
 package lec10_01_java_control_statements;
 
+// Note for Tofael: break, continue should be completed here in next batch
 public class D_use_of_nested_loop {
 
 	public static void main(String[] args) {
