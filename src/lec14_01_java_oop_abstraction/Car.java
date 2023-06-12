@@ -1,4 +1,4 @@
-package lec11_02_java_oop_abstraction;
+package lec14_01_java_oop_abstraction;
 
 // Interface names starts with UpperCase 
 // They follow Camel case or Snake case pattern.
@@ -10,7 +10,11 @@ package lec11_02_java_oop_abstraction;
 // Interface is a Blueprint of the Class.
 // An interface is a collection of methods that are defined (declared) but not implemented. 
 
-public interface Car {
+// An Interface can't inherit a regular class or an abstract class by extends keyword
+// An Interface can inherit more than one Interface (separated by coma) by extends keyword
+
+// implements keyword can't be used for inheritance inside Interface
+public interface Car extends Taxi, Truck {
 	// Global variable
 	// Inside Interface, variable can not be declared, see line 16
 	// public int year;
@@ -42,7 +46,27 @@ public interface Car {
 	// return type abstract method can also be created inside the Interface
 	public String brake ();
 	
-	// I am not initializing interface today
-	// Also not showing a relation between class and Interface
+	// we can also create parameterized method, Please see line 46 now
+	
+	// from Java 1.8, JAVA implemented static and default type method in interface which are implemented in nature
+	// important interview question
+	
+	// This default is not access modifier
+	public default void honk () {
+		System.out.println("This Honk feature is from Car Interface");
+	}
+	
+	public static void gear () {
+		System.out.println("This Gear feature is from Car Interface");
+	}
+	
+	// not important here, just used, can ignore, just showed that it is possible
+	public default String honk1() { 
+		System.out.println("Honk Feature from Car Interface");
+		return null;
+	}
+	
+	
+	
 
 }
